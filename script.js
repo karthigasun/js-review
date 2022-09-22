@@ -610,28 +610,6 @@ output=
 console.log(output); */
 
 
-
-
-function num(){
-	
-    let number=document.getElementById("change").value,rem,sum=0,i=0;
-    str=["zero","one","two","three","four","five","six","seven","eight","nine"];
-    while(number>0){
-    
-      rem=number%10;
-      sum=sum*10+rem;
-      number=parseInt(number/10);
-	  
-	  if(rem<0){
-		  console.log(srt[i]);
-	  }
-    }
-	document.getElementById("ans").innerHTML="Reverse of a Number is "+sum;
-	//console.log(sum);
-}
-document.getElementById("btn").addEventListener("click",num);
-
-
 /* let a ="abcd#21@";
 let b=a.replace("@","");
 console.log(b); */
@@ -652,9 +630,33 @@ function remove(){
 }
 remove(); */
 
-let numbers="123457689",
-odd,even;
-even=numbers.replace(/[^24680]/g,"");
-console.log("The even Numbers are "+even);
-odd=numbers.replace(/[^13579]/g,"");
-console.log("The odd Numbers are "+odd);
+
+/* function odd(){
+	let number=document.getElementById("change").value,
+	even=number.replace(/[^24680]$/g,"");
+	
+	if(number==even){
+		document.getElementById("ans").innerHTML="The Number is Even";
+	}
+	else{
+		document.getElementById("ans").innerHTML="The Number is Odd";
+	}
+}
+document.getElementById("btn").addEventListener("click",odd);
+ */
+ 
+ function numbers(){
+	
+    let string=document.getElementById("change").value,rem,i,
+    str=["zero","one","two","three","four","five","six","seven","eight","nine"];
+    while(string>0) {
+	string=parseInt(string);
+	rem=string%10;
+	string=string/10;
+	i=rem;
+	if(rem>0){
+		document.getElementById("ans").innerHTML="The Number is "+str[i];
+	}
+}
+}
+document.getElementById("btn").addEventListener("click",numbers);

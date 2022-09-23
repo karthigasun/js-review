@@ -645,7 +645,7 @@ remove(); */
 document.getElementById("btn").addEventListener("click",odd);
  */
  
- function numbers(){
+/*  function numbers(){
 	
     let string=document.getElementById("change").value,rem,i,
     str=["zero","one","two","three","four","five","six","seven","eight","nine"];
@@ -659,4 +659,77 @@ document.getElementById("btn").addEventListener("click",odd);
 	}
 }
 }
-document.getElementById("btn").addEventListener("click",numbers);
+document.getElementById("btn").addEventListener("click",numbers); */
+
+/* let number="12345",sum=0,result;
+	even=number.replace(/[^24680]/g,"");
+
+	console.log(even);
+	sum_even=even.split("");
+	//console.log(sum_even);
+	
+	for(i=0;i<sum_even.length;i++){
+
+		sum_even[i]=parseInt(sum_even[i]);
+		result=sum+sum_even[i];
+		sum=result;
+		
+	}
+	console.log(sum);
+	
+	let number2="12345",sum1=0,result1;
+	odd=number2.replace(/[^13579]/g,"");
+
+	console.log(odd);
+	sum_odd=odd.split("");
+	//console.log(sum_odd);
+	
+	for(i=0;i<sum_odd.length;i++){
+
+		sum_odd[i]=parseInt(sum_odd[i]);
+		result1=sum1+sum_odd[i];
+		sum1=result1;
+		
+	}
+	console.log(sum1); */
+	
+/* let number="12345",sum=0,result,
+	even=number.replace(/[^24680]/g,""),
+	odd=number.replace(/[^13579]/g,"")
+
+	console.log(even);
+	console.log(odd);
+	sum_even=even.split("");
+	//console.log(sum_even);
+	
+	for(i=0;i<sum_even.length;i++){
+
+		sum_even[i]=parseInt(sum_even[i]);
+		result=sum+sum_even[i];
+		sum=result;
+		
+	}
+	console.log(sum); */
+let num="44"
+function suffix(){
+	let
+	number=num.replace(/[^1]$/g,""),
+	number2=num.replace(/[^2]$/g,""),
+	number3=num.replace(/[^3]$/g,"");
+	if(num==number){
+		console.log(num+"st")
+	}
+	
+	else if(num==number2){
+		console.log(num+"nd")
+	}
+	
+	else if(num==number3){
+		console.log(num+"rd")
+	}
+	
+	else{
+		console.log(num+"th")
+	}
+}
+suffix();

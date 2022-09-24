@@ -695,7 +695,7 @@ document.getElementById("btn").addEventListener("click",numbers); */
 	
 /* let number="12345",sum=0,result,
 	even=number.replace(/[^24680]/g,""),
-	odd=number.replace(/[^13579]/g,"")
+	odd=number.replace(/[^13579]/g,"");
 
 	console.log(even);
 	console.log(odd);
@@ -710,26 +710,27 @@ document.getElementById("btn").addEventListener("click",numbers); */
 		
 	}
 	console.log(sum); */
-let num="44"
+let num=parseInt(prompt("Give the value"));
+let num2=num.replace(/[^1]$/g,"");
 function suffix(){
-	let
-	number=num.replace(/[^1]$/g,""),
-	number2=num.replace(/[^2]$/g,""),
-	number3=num.replace(/[^3]$/g,"");
-	if(num==number){
-		console.log(num+"st")
+	
+	if(num=="1"&&num!=="11"){
+		console.log(num+"st");
 	}
 	
-	else if(num==number2){
-		console.log(num+"nd")
+	else if(num=="2"&&num!=="12"){
+		console.log(num+"nd");
 	}
 	
-	else if(num==number3){
-		console.log(num+"rd")
+	else if(num=="3"&&num!=="13"){
+		console.log(num+"rd");
+	}
+	else if(num==num2){
+		console.log(num+"1st");
 	}
 	
 	else{
-		console.log(num+"th")
+		console.log(num+"th");
 	}
 }
 suffix();

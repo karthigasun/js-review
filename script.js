@@ -710,23 +710,22 @@ document.getElementById("btn").addEventListener("click",numbers); */
 		
 	}
 	console.log(sum); */
-let num=parseInt(prompt("Give the value"));
-let num2=num.replace(/[^1]$/g,"");
+let num=parseInt(prompt("Give the value")),
+rem1=num%10,
+rem2=num%100;
+
 function suffix(){
 	
-	if(num=="1"&&num!=="11"){
+	if(rem1==1&&rem2!==11){
 		console.log(num+"st");
 	}
 	
-	else if(num=="2"&&num!=="12"){
+	else if(rem1==2&&rem2!==12){
 		console.log(num+"nd");
 	}
 	
-	else if(num=="3"&&num!=="13"){
+	else if(rem1==3&&rem2!==13){
 		console.log(num+"rd");
-	}
-	else if(num==num2){
-		console.log(num+"1st");
 	}
 	
 	else{

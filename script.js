@@ -369,11 +369,11 @@ document.getElementById("btn").addEventListener("click",age); */
 //for(i=n;i>0;i--){
 	//console.log(i);
 //}
-//let a={brand:"lenovo",color:"black"};
+/* let a={brand:"lenovo",color:"black"};
 
-//for(let x in a){
-	//console.log(a[x]);
-//}
+for(let x in a){
+	console.log(a[x]);
+} */
 
 
 //let
@@ -710,7 +710,7 @@ document.getElementById("btn").addEventListener("click",numbers); */
 		
 	}
 	console.log(sum); */
-let num=parseInt(prompt("Give the value")),
+/* let num=parseInt(prompt("Give the value")),
 rem1=num%10,
 rem2=num%100;
 
@@ -732,4 +732,30 @@ function suffix(){
 		console.log(num+"th");
 	}
 }
-suffix();
+suffix(); */
+
+let number=200,i=0,num,arr=[],sp,str,str2;
+
+for(i=0;i<number;i++){
+	if(i%7==0){
+		num=i;	
+		//console.log(num);
+		arr.push(num);
+	}
+}
+//console.log(arr);
+for(j=0;j<arr.length;j++){
+	str=arr[j];
+	str=String(str);
+	str=str.split("");
+	//console.log(str);
+	str2=str
+
+for(k=0;k<str2.length;k++){
+	//console.log(str[0]);
+	if(str2[0]<str2[1]||(str2[1]<str[2])){
+		str2=str.join("");
+		console.log(str2)
+	}
+}
+}

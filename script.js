@@ -738,10 +738,14 @@ let number=200,i=0,num,arr=[],sp,str,str2;
 
 for(i=0;i<number;i++){
 	if(i%7==0){
-		num=i;	
+		//num=i;	
 		//console.log(num);
-		arr.push(num);
+		
+		if(i%3!==0){
+			//console.log(i);
+			arr.push(i);
 	}
+}
 }
 //console.log(arr);
 for(j=0;j<arr.length;j++){
@@ -749,13 +753,40 @@ for(j=0;j<arr.length;j++){
 	str=String(str);
 	str=str.split("");
 	//console.log(str);
-	str2=str
+	sp=str;
+	//console.log(sp);
+	 if ((sp[1]>sp[0])&&sp[1]!=sp[2]){
+		console.log(sp.join(""));
+	}
+	
+}
 
-for(k=0;k<str2.length;k++){
-	//console.log(str[0]);
-	if(str2[0]<str2[1]||(str2[1]<str[2])){
-		str2=str.join("");
-		console.log(str2)
+/* let object=[{
+	"name":"aaa",
+	"place":"bbb",
+	"age":"ccc",
+	"agess":"ghh"
+	},
+	{"name":"aaa",
+	"place":"bbb",
+	"age":"ccc",
+	"agess":"ghh"
+	},
+	{"name":"aaa",
+	"place":"bbb",
+	"age":"ccc",
+	"agess":"ghh"
+	},
+	{"name":"aaa",
+	"place":"bbb",
+	"age":"ccc",
+	}
+],len=0;
+//console.log(object.length);
+for(i=0;i<object.length;i++){
+	for(key in object[i]){
+		len++;
 	}
 }
-}
+console.log(len); */
+

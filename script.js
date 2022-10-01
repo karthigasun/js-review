@@ -734,32 +734,38 @@ function suffix(){
 }
 suffix(); */
 
-let number=200,i=0,num,arr=[],sp,str,str2;
+let number=200,i=0,j=0,arr=[],sp,str=[],str2=[],sp2,sp3,sp4,sp5;
 
 for(i=0;i<number;i++){
 	if(i%7==0){
 		//num=i;	
 		//console.log(num);
-		
-		if(i%3!==0){
-			//console.log(i);
-			arr.push(i);
-	}
+		arr.push(i);	
 }
 }
 //console.log(arr);
 for(j=0;j<arr.length;j++){
-	str=arr[j];
-	str=String(str);
-	str=str.split("");
-	//console.log(str);
-	sp=str;
+	sp=arr[j]%10;
+	sp2=parseInt(arr[j]/10);
 	//console.log(sp);
-	 if ((sp[1]>sp[0])&&sp[1]!=sp[2]){
-		console.log(sp.join(""));
-	}
+	//console.log(sp2);
 	
+	if(sp2<sp){
+		str.push(arr[j]);
+		//console.log(str);
+	}
+	if(arr[j]>100){
+		sp3=arr[j]-100;
+		sp4=sp3%10;
+		sp2=parseInt(sp3/10);
+		
+		if(sp2<sp4){
+			str.push(arr[j]);
+		}
+	}
 }
+console.log(str);
+//console.log(str2);
 
 /* let object=[{
 	"name":"aaa",

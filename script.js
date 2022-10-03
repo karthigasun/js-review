@@ -734,7 +734,7 @@ function suffix(){
 }
 suffix(); */
 
-let number=200,i=0,j=0,arr=[],sp,str=[],str2=[],sp2,sp3,sp4,sp5;
+/* let number=200,i=0,j=0,arr=[],sp,str=[],str2=[],sp2,sp3,sp4,sp5;
 
 for(i=0;i<number;i++){
 	if(i%7==0){
@@ -764,7 +764,7 @@ for(j=0;j<arr.length;j++){
 		}
 	}
 }
-console.log(str);
+console.log(str); */
 //console.log(str2);
 
 /* let object=[{
@@ -795,4 +795,103 @@ for(i=0;i<object.length;i++){
 	}
 }
 console.log(len); */
+
+//Symbol.iterator
+let a=["a","b","c","d"];
+let b=a[Symbol.iterator]();
+console.log(b.next().value);
+console.log(b.next().value);
+console.log(b.next().value);
+console.log(b.next().value);console.log(b.next().value);
+
+//at
+let cart = ['apple', 'banana', 'pear'];
+console.log(cart.at(-2));
+
+//concat
+let array1 = ['a', 'b', 'c'];
+let array2 = ['d', 'e', 'f'];
+let array3 = array1.concat(array2);
+console.log(array3);
+
+//copyWithin
+let number=[1,2,3,4,5,6],bcopy;
+bcopy=number.copyWithin(0,3,4)
+console.log(bcopy);
+
+//entries
+let ent=[1,2,3,4,5],rie;
+rie=ent.entries(3);
+console.log(rie.next().value);
+
+//every
+let evry=(value) => value<8;
+let ev=[1,2,3,4,5,6],ry;
+ry=ev.every(evry);
+console.log(ry);
+
+//fill
+let fil=[1,2,3,4,5,6],fill;
+fill=fil.fill(0,1,5);
+console.log(fill);
+
+//filter
+let word=["ab","ba","cccc","dddd"];
+
+let result = word.filter(word => word.length > 3);
+
+console.log(result);
+
+//find
+let fi=[1,2,3,12,40,20],find;
+
+find = fi.find(element => element >10);
+console.log(find);
+
+//find index
+let fid=[1,2,3,12,40,20],findi;
+findi=fid.findIndex(element => element == 4);
+console.log(findi);
+
+//find last
+let la=[1,2,3,12,40,20,60],last;
+last=la.findLast(element => element >39);
+console.log(last);
+
+//last index 
+let li=[1,2,10,1,3,1,],lin;
+lin=li.lastIndexOf(1);
+console.log(lin);
+
+//flat
+let fl= [0, 1, 2, [3, 4]],flat;
+flat=fl.flat();
+console.log(flat);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

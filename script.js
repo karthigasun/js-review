@@ -645,7 +645,7 @@ remove(); */
 document.getElementById("btn").addEventListener("click",odd);
  */
  
-/*  function numbers(){
+/* function numbers(){
 	
     let string=document.getElementById("change").value,rem,i,
     str=["zero","one","two","three","four","five","six","seven","eight","nine"];
@@ -788,6 +788,7 @@ console.log(str); */
 	"age":"ccc",
 	}
 ],len=0;
+
 //console.log(object.length);
 for(i=0;i<object.length;i++){
 	for(key in object[i]){
@@ -806,7 +807,7 @@ console.log(b.next().value);console.log(b.next().value);
 
 //at
 let cart = ['apple', 'banana', 'pear'];
-console.log(cart.at(-2));
+console.log(cart.at(0));
 
 //concat
 let array1 = ['a', 'b', 'c'];
@@ -816,12 +817,12 @@ console.log(array3);
 
 //copyWithin
 let number=[1,2,3,4,5,6],bcopy;
-bcopy=number.copyWithin(0,3,4)
+bcopy=number.copyWithin(0,0,4)
 console.log(bcopy);
 
 //entries
 let ent=[1,2,3,4,5],rie;
-rie=ent.entries(3);
+rie=ent.entries(0);
 console.log(rie.next().value);
 
 //every
@@ -832,20 +833,20 @@ console.log(ry);
 
 //fill
 let fil=[1,2,3,4,5,6],fill;
-fill=fil.fill(0,1,5);
+fill=fil.fill(2,1,3);
 console.log(fill);
 
 //filter
 let word=["ab","ba","cccc","dddd"];
 
-let result = word.filter(word => word.length > 3);
+let result = word.filter(word => word.length < 3);
 
 console.log(result);
 
 //find
-let fi=[1,2,3,12,40,20],find;
+let fi=[1,2,3,12,20,40],find;
 
-find = fi.find(element => element >10);
+find = fi.find(element => element <12);
 console.log(find);
 
 //find index
@@ -868,19 +869,73 @@ let fl= [0, 1, 2, [3, 4]],flat;
 flat=fl.flat();
 console.log(flat);
 
+//flatMap
+let arrfl = [1, 2, [3], [4, 5], 6, []],arrflat;
+arrflat= arrfl.flatMap(num => num);
+console.log(arrflat);
 
+//for each
+let fore=[1,2,34],fore2;
+fore2=fore.forEach(element=>console.log(element));
+//console.log(fore2);
 
+//from
+let fr="karthik";
+console.log(Array.from(fr))
 
+//includes
+let pets = ['cat', 'dog', 'bat'];
+console.log(pets.includes('cat'));
+console.log(pets.includes('at'));
 
+//index of
+let ind=[1,2,3,"q",5];
+console.log(ind.indexOf("q"));
 
+//join
+let ele=["R","Karthi","gasun"];
+console.log(ele.join(""));
 
+//keys
+let ke = ["a", "b", "c"],keys;
+keys = ke.keys();
+console.log(keys);
+for (let key of keys) {
+  console.log(key);
+}
 
+//lastindexof
+let lind=[10,10,2,4,10];
+console.log(lind.lastIndexOf(10));
 
+//map
+let map = [1, 4, 9, 16],map1;
+map1 = map.map(x => x * 2);
+console.log(map1);
 
+let num=parseInt(prompt("Give the value")),
+rem1=num%10,
+rem2=num%100;
 
-
-
-
+function suffix(){
+	
+	if(rem1==1&&rem2!==11){
+		console.log(num+"st");
+	}
+	
+	else if(rem1==2&&rem2!==12){
+		console.log(num+"nd");
+	}
+	
+	else if(rem1==3&&rem2!==13){
+		console.log(num+"rd");
+	}
+	
+	else{
+		console.log(num+"th");
+	}
+}
+suffix();
 
 
 

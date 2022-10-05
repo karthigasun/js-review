@@ -937,7 +937,13 @@ function suffix(){
 }
 suffix();
 
-
+let d = new Date(2022, 09, 15, 10, 30, 30, 0);
+ let d2 = new Date(2022, 09, 16, 12, 30, 30, 0);
+ let date=d-d2;
+ date=Math.abs(date);
+ date=date/(1000*60*60);
+ date=Math.floor(date);
+console.log("The difference in"+date+"hour");
 
 
 

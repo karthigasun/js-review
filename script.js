@@ -817,7 +817,7 @@ console.log(array3);
 
 //copyWithin
 let number=[1,2,3,4,5,6],bcopy;
-bcopy=number.copyWithin(0,0,4)
+bcopy=number.copyWithin(0,4)
 console.log(bcopy);
 
 //entries
@@ -833,7 +833,7 @@ console.log(ry);
 
 //fill
 let fil=[1,2,3,4,5,6],fill;
-fill=fil.fill(2,1,3);
+fill=fil.fill(1,3);
 console.log(fill);
 
 //filter
@@ -899,7 +899,7 @@ console.log(ele.join(""));
 //keys
 let ke = ["a", "b", "c"],keys;
 keys = ke.keys();
-console.log(keys);
+//console.log(keys);
 for (let key of keys) {
   console.log(key);
 }
@@ -913,46 +913,22 @@ let map = [1, 4, 9, 16],map1;
 map1 = map.map(x => x * 2);
 console.log(map1);
 
-let num=parseInt(prompt("Give the value")),
-rem1=num%10,
-rem2=num%100;
+//reduce-right
+let red=[[0, 1], [2, 3], [4, 5]],redr;
+redr=red.reduceRight((acc,cvalue)=>acc.concat(cvalue));
+console.log(redr);
 
-function suffix(){
-	
-	if(rem1==1&&rem2!==11){
-		console.log(num+"st");
-	}
-	
-	else if(rem1==2&&rem2!==12){
-		console.log(num+"nd");
-	}
-	
-	else if(rem1==3&&rem2!==13){
-		console.log(num+"rd");
-	}
-	
-	else{
-		console.log(num+"th");
-	}
-}
-suffix();
-
-let d = new Date(2022, 09, 15, 10, 30, 30, 0);
- let d2 = new Date(2022, 09, 16, 12, 30, 30, 0);
- let date=d-d2;
- date=Math.abs(date);
- date=date/(1000*60*60);
- date=Math.floor(date);
-console.log("The difference in"+date+"hour");
+let rev=[1,2,3],rever;
+rever=rev.reverse();
+console.log(rever);
 
 
 
+let fil1=[1,2,3,4,5],filter1;
+filter1=fil1.filter(num=>num==5);
+console.log(filter1);
 
-
-
-
-
-
-
-
+let afil=[1,2,3,4,5],afil1;
+afil1=afil.fill(0,2,4);
+console.log(afil1);
 

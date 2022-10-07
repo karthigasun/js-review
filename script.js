@@ -932,3 +932,17 @@ let afil=[1,2,3,4,5],afil1;
 afil1=afil.fill(0,2,4);
 console.log(afil1);
 
+function numbers(){
+	
+    let string=document.getElementById("change").value,rem,i,
+    str=["zero","one","two","three","four","five","six","seven","eight","nine"];
+    while(string>0) {
+	string=parseInt(string);
+	rem=string%10;
+	string=string/10;
+	i=rem;
+	if(rem>0){
+		document.getElementById("ans").innerHTML="The Number is "+str[i];
+	}
+}
+}

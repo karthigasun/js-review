@@ -797,7 +797,7 @@ for(i=0;i<object.length;i++){
 }
 console.log(len); */
 
-//Symbol.iterator
+/* //Symbol.iterator
 let a=["a","b","c","d"];
 let b=a[Symbol.iterator]();
 console.log(b.next().value);
@@ -825,29 +825,12 @@ let ent=[1,2,3,4,5],rie;
 rie=ent.entries(0);
 console.log(rie.next().value);
 
-//every
-let evry=(value) => value<8;
-let ev=[1,2,3,4,5,6],ry;
-ry=ev.every(evry);
-console.log(ry);
 
 //fill
 let fil=[1,2,3,4,5,6],fill;
 fill=fil.fill(1,3);
 console.log(fill);
 
-//filter
-let word=["ab","ba","cccc","dddd"];
-
-let result = word.filter(word => word.length < 3);
-
-console.log(result);
-
-//find
-let fi=[1,2,3,12,20,40],find;
-
-find = fi.find(element => element <12);
-console.log(find);
 
 //find index
 let fid=[1,2,3,12,40,20],findi;
@@ -864,29 +847,17 @@ let li=[1,2,10,1,3,1,],lin;
 lin=li.lastIndexOf(1);
 console.log(lin);
 
+
+
 //flat
 let fl= [0, 1, 2, [3, 4]],flat;
 flat=fl.flat();
 console.log(flat);
 
-//flatMap
-let arrfl = [1, 2, [3], [4, 5], 6, []],arrflat;
-arrflat= arrfl.flatMap(num => num);
-console.log(arrflat);
-
-//for each
-let fore=[1,2,34],fore2;
-fore2=fore.forEach(element=>console.log(element));
-//console.log(fore2);
-
 //from
 let fr="karthik";
 console.log(Array.from(fr))
 
-//includes
-let pets = ['cat', 'dog', 'bat'];
-console.log(pets.includes('cat'));
-console.log(pets.includes('at'));
 
 //index of
 let ind=[1,2,3,"q",5];
@@ -908,21 +879,10 @@ for (let key of keys) {
 let lind=[10,10,2,4,10];
 console.log(lind.lastIndexOf(10));
 
-//map
-let map = [1, 4, 9, 16],map1;
-map1 = map.map(x => x * 2);
-console.log(map1);
-
-//reduce-right
-let red=[[0, 1], [2, 3], [4, 5]],redr;
-redr=red.reduceRight((acc,cvalue)=>acc.concat(cvalue));
-console.log(redr);
 
 let rev=[1,2,3],rever;
 rever=rev.reverse();
 console.log(rever);
-
-
 
 let fil1=[1,2,3,4,5],filter1;
 filter1=fil1.filter(num=>num==5);
@@ -930,19 +890,121 @@ console.log(filter1);
 
 let afil=[1,2,3,4,5],afil1;
 afil1=afil.fill(0,2,4);
-console.log(afil1);
+console.log(afil1); */
+/* 
+//reduce
+let redArr=[1,2,3,4,5],redArra,ivalue=0;
+redArra=redArr.reduce((pvalue,cvalue)=>
+	pvalue+cvalue,ivalue);
+	console.log(redArra);
 
-function numbers(){
-	
-    let string=document.getElementById("change").value,rem,i,
-    str=["zero","one","two","three","four","five","six","seven","eight","nine"];
-    while(string>0) {
-	string=parseInt(string);
-	rem=string%10;
-	string=string/10;
-	i=rem;
-	if(rem>0){
-		document.getElementById("ans").innerHTML="The Number is "+str[i];
+//map
+let map = [1, 4, 9, 16],map1;
+map1 = map.map(x => x * 2);
+console.log(map1);
+
+//filter
+let word=["ab","ba","cccc","dddd"];
+
+let result = word.filter(word => word.length < 3);
+
+console.log(result);
+
+//find
+let fi=[1,2,3,12,20,40],find;
+
+find = fi.find(element => element <12);
+console.log(find);
+
+//find
+let fi2=["aa","bb","cc"],find2;
+
+find2 = fi2.find(element => element.length==2);
+console.log(find2);
+
+//for each
+let fore=[1,2,34],fore2;
+fore2=fore.forEach(element=>console.log(element));
+
+let fore3=["aa","bb","cc"],for3;
+for3=fore3.forEach(element=>console.log(element));
+
+//every
+let evry=(value) => value<8;
+let ev=[1,2,3,4,5,6],ry;
+ry=ev.every(evry);
+console.log(ry);
+
+let evry2=(value) => value.length<=4;
+let ev2=["jan","feb","mar","apri","june"],ry2;
+ry2=ev2.every(evry2);
+console.log(ry2);
+
+//splice
+let sp=[1,3,4,5],spli;
+spli=sp.splice(2,1);
+console.log(spli);
+
+let spin=["jan","feb","mar","apr","jun"];
+spin.splice(4,0,"may");
+console.log(spin);
+
+//string
+let str=[1,2,3,4,5],stri;
+stri=String(str);
+console.log(stri);
+
+let str2=["jan","feb","mar","apr","may"],stri2;
+stri2=String(str2);
+console.log(stri2); */
+
+
+/* let object={
+	"name":"karthi",
+	"age":26,
+	"qualification":"DCE"
+};
+
+Object.keys(object).find((a)=>{
+	if(a=="age"){
+	console.log(object[a]);
 	}
 }
+) */
+
+//flatMap
+let arrfl = [1, 2, [3], [4, 5], 6, []],arrflat;
+arrflat= arrfl.flatMap(num => num);
+console.log(arrflat);
+
+//reduce-right
+let red=[[0, 1], [2, 3], [4, 5]],redr;
+redr=red.reduceRight((acc,cvalue)=>acc.concat(cvalue));
+console.log(redr);
+
+//includes
+let pets = ['cat', 'dog', 'bat'];
+console.log(pets.includes('cat'));
+console.log(pets.includes('at'));
+
+//findLastIndex
+let lain= [5, 12, 50, 130, 44],laind;
+laind=lain.findLastIndex((num)=> num>44);
+console.log(laind);
+
+//values
+let val=[1,2,3,4],value;
+value=val.values();
+//console.log(value);
+
+for(let va of value){
+	console.log(va);
 }
+
+
+
+
+
+
+
+

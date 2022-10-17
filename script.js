@@ -583,15 +583,15 @@ document.getElementById("btn").addEventListener("click",background);*/
   //document.body.style.background=color
 //}
 //document.getElementById("btn").addEventListener("click",bg_color);
-/* 
- let 
- a="leve",b;
+
+/*  let 
+ a=["leve"],b;
  b=a.split("");
  b=b.reverse();
  b=b.join("");
-console.log(b);
+console.log(b); */
 
- 	if(a==b){
+ /* 	if(a==b){
  		console.log("This is Polyndrome");
 	}
  	else{
@@ -971,7 +971,7 @@ Object.keys(object).find((a)=>{
 	}
 }
 ) */
-
+/* 
 //flatMap
 let arrfl = [1, 2, [3], [4, 5], 6, []],arrflat;
 arrflat= arrfl.flatMap(num => num);
@@ -999,7 +999,64 @@ value=val.values();
 
 for(let va of value){
 	console.log(va);
+} */
+
+
+/* Starting with an array containing the numbers 1 through 10, use filter, map, and reduce to produce the following. Use console.log to display the results.
+
+1.An array of odd numbers.
+2.An array of numbers divisible by 2 or 5.
+3.An array of numbers divisible by 3 and then squared those numbers.
+4.The sum of the following: square the numbers divisible by 5. */
+ 
+/* let array=[1,2,3,4,5,6,7,8,9,10],fil,ma,red,ma2,ma3,fil2,red2;
+//1
+fil=array.filter((num)=> num%2==1);
+console.log(fil);
+
+//3
+ma=array.filter((num)=>num%2==0 || num%5==0);
+console.log(ma);
+
+//2
+red=array.filter((num)=> num%3==0);
+console.log(red);
+
+ma2=red.map((num)=>num**2);
+console.log(ma2);
+
+//4
+ma3=array.filter((num)=>num%5==0);
+console.log(ma3);
+
+fil2=ma3.map((num)=>num**2);
+console.log(fil2);
+
+red2=fil2.reduce((num,num1)=> num+num1);
+console.log(red2); */
+
+let empArr=[],
+mobiles=[
+{"id":1,"brand":"redmi"},
+{"id":2,"brand":"poco"},
+],obj,input;
+//console.log(mobiles);
+
+function add(){
+	obj=mobiles.forEach((ele)=>console.log(ele));
+
+	input=document.getElementById("change").value;
 }
+add();
+//document.getElementById("btn").addEventListener("click");
+
+
+
+
+
+
+
+
 
 
 

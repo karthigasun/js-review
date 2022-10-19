@@ -1035,29 +1035,53 @@ console.log(fil2);
 red2=fil2.reduce((num,num1)=> num+num1);
 console.log(red2); */
 
-let empArr=[],
-mobiles=[
-{"id":1,"brand":"redmi"},
-{"id":2,"brand":"poco"},
-],obj,input;
-//console.log(mobiles);
+//Write a JavaScript program to add items in an blank array and display the items.
 
-function add(){
-	obj=mobiles.forEach((ele)=>console.log(ele));
+/* let empArr=[],
+	cal=document.getElementById("btn");
+	cal.addEventListener("click",add);
+	function add(){
+		let input=document.getElementById("change").value,
+		output=document.getElementById("ans");
+		empArr.push(input);
+		//console.log(empArr);
+		output.innerHTML=empArr;
+		
+	} */
+//Write a JavaScript program which accept a number as input and insert dashes (-) between each two even numbers. 
+//For example if you accept 025468 the output should be 0-254-6-8.
 
-	input=document.getElementById("change").value;
+/* let number=parseInt(prompt("Give the value")),
+num=number.toString();
+//console.log(num);
+num1=[];
+
+
+for(i=0;i<num.length;i++){
+	if((num[i-1]%2==0)&&(num[i]%2==0)){
+		//console.log("-",num[i]);
+		num1.push("-",num[i]);
+	}
+	else{
+		//console.log(num[i]);
+		num1.push(num[i]);
+	}
 }
-add();
-//document.getElementById("btn").addEventListener("click");
+num1=num1.join("");
+console.log(num1); */
 
+//Write a program to find duplicate values in a  array
 
+let arr=[1,2,2,3,5,5];
 
-
-
-
-
-
-
+for(i=0;i<arr.length;i++){
+	for(j=i+1;j<arr.length;j++){
+		if(arr[i]==arr[j]){
+			console.log(arr[j]);
+		}
+		
+	}
+}
 
 
 

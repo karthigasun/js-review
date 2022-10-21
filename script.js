@@ -1072,20 +1072,20 @@ console.log(num1); */
 
 //Write a program to find duplicate values in a  array
 
-let arr=[1,2,2,3,5,5];
+let arr=[1,1,2,1,2,2,3,5,5],empArr=[],str,ind;
 
 for(i=0;i<arr.length;i++){
 	for(j=i+1;j<arr.length;j++){
-		if(arr[i]==arr[j]){
-			console.log(arr[j]);
+		if(arr[i]===arr[j]){
+			empArr.push(arr[j]);
+			ind++;
+			console.log(ind);
+			
 		}
-		
+		//console.log(empArr);
 	}
+	//console.log(empArr);
 }
-
-
-
-
-
-
-
+console.log(empArr);
+//str=empArr.toString();
+//console.log(str);

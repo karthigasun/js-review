@@ -1,7 +1,3 @@
-// var i=2
-// var b=1
-// var c=(i+b)
-// console.log(c
 //var s = ["i", "like", "this",
 	//	"program", "very", "much"];
 										
@@ -1085,15 +1081,3 @@ for(i=0;i<arr.length;i++){
 }
 console.log(empArr);
 //str=empArr.toString();
-let object={
-	"name":"karthi",
-	"age":26,
-	"qualification":"DCE"
-};
-
-Object.keys(object).find((a)=>{
-	if(a=="age"){
-	console.log(object[a]);
-	}
-}
-)

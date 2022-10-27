@@ -1068,16 +1068,71 @@ console.log(num1); */
 
 //Write a program to find duplicate values in a  array
 
-let arr=[1,1,2,1,2,2,3,5,5],empArr=[],str;
+/* let arr=[1,1,2,1,2,2,3,5,5],empArr=[],count;
 
 for(i=0;i<arr.length;i++){
 	for(j=i+1;j<arr.length;j++){
 		
 		if(arr[i]===arr[j]){
 			empArr.fil(arr[j]);
+			count++;
 			
 		}
 	}
 }
 console.log(empArr);
-//str=empArr.toString();
+//str=empArr.toString(); */
+
+let arr=[1,1,1,2,2,4,5,6,8,8],obj={};
+console.log(arr);
+arr.forEach((num)=>{
+	obj[num]=(obj[num]||0)+1;
+})
+console.log(obj);
+
+let str="",num=5;
+for(i=0;i<num;i++){
+	for(j=0;j<num;j++){
+		if(i==0||i==num-1){
+			str+="*";
+			//console.log(str);
+		}
+		else{
+			if(j==0||j==num-1){
+				str+="*";
+			//console.log(str);
+		}
+			 else{
+				str+=" ";
+			}
+		}
+	}
+	str+="\n"
+}
+
+console.log(str);
+
+
+let str1="",num1=5;
+for(i=0;i<num1;i++){
+	//console.log(str1);
+	for(j=0;j<num1;j++){
+		str1+="*";
+		//console.log(str1)
+	}
+	str1+="\n"
+}
+console.log(str1);
+
+
+
+
+
+
+
+
+
+
+
+
+

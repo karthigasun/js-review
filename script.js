@@ -1083,7 +1083,7 @@ for(i=0;i<arr.length;i++){
 console.log(empArr);
 //str=empArr.toString(); */
 
-let arr=[1,1,1,2,2,4,5,6,8,8],obj={};
+/* let arr=[1,1,1,2,2,4,5,6,8,8],obj={};
 console.log(arr);
 arr.forEach((num)=>{
 	obj[num]=(obj[num]||0)+1;
@@ -1122,15 +1122,35 @@ for(i=0;i<num1;i++){
 	}
 	str1+="\n"
 }
-console.log(str1);
+console.log(str1); */
 
 
+//Write a program to Print Left bottom triangle of * symbol
 
-
-
-
-
-
+let num=5,str="";
+for (i=0;i<num;i++){
+	for(j=0;j<=i;j++){
+		str+="*"
+		//console.log(str);
+	}
+	str+="\n"
+}
+console.log(str);
+var de=["a","b","c"],val=0;
+var name="karthik";
+for(i=0;i<name.length;i++){
+	for(j=0;j<de.length;j++){
+		if(name[i]==de[j]){
+			val++;
+			if(val){
+				console.log("1");
+			}
+			else{
+				console.log("err")
+			}
+		}
+	}
+}
 
 
 

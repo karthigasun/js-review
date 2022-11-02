@@ -1044,6 +1044,22 @@ console.log(red2); */
 		output.innerHTML=empArr;
 		
 	} */
+	
+/* var de=["a","b","c"],val=0;
+var name="karthik";
+for(i=0;i<name.length;i++){
+	for(j=0;j<de.length;j++){
+		if(name[i]==de[j]){
+			val++;
+			if(val){
+				console.log("1");
+			}
+			else{
+				console.log("err")
+			}
+		}
+	}
+} */
 //Write a JavaScript program which accept a number as input and insert dashes (-) between each two even numbers. 
 //For example if you accept 025468 the output should be 0-254-6-8.
 
@@ -1127,7 +1143,7 @@ console.log(str1); */
 
 //Write a program to Print Left bottom triangle of * symbol
 
-let num=5,str="";
+/* let num=5,str="";
 for (i=0;i<num;i++){
 	for(j=0;j<=i;j++){
 		str+="*"
@@ -1135,24 +1151,58 @@ for (i=0;i<num;i++){
 	}
 	str+="\n"
 }
-console.log(str);
-var de=["a","b","c"],val=0;
-var name="karthik";
-for(i=0;i<name.length;i++){
-	for(j=0;j<de.length;j++){
-		if(name[i]==de[j]){
-			val++;
-			if(val){
-				console.log("1");
-			}
-			else{
-				console.log("err")
+console.log(str); */
+
+//Write a program to print Hollow Triangle Star Pattern
+
+let str="",num=5;
+for(i=0;i<=num;i++){
+	for(j=0;j<i;j++){
+		if(i==num){
+			str+="*";
+			//console.log(str);
+		}
+		else{ 
+			if(j==0||j==i-1){
+				str+="*";
+			//console.log(str);
+		}
+			 else{
+				str+=" ";
 			}
 		}
 	}
+	str+="\n"
 }
 
+console.log(str);
 
+let object=[{
+	"name":"aaa",
+	"place":"bbb",
+	"age":"ccc",
+	"agess":"ghh"
+	},
+	{"name":"aaa",
+	"place":"bbb",
+	"age":"ccc",
+	"agess":"ghh"
+	},
+	{"name":"aaa",
+	"place":"bbb",
+	"age":"ccc",
+	"agess":"ghh"
+	},
+	{"name":"aaa",
+	"place":"bbb",
+	"age":"ccc",
+	}
+],len=0;
 
-
-
+//console.log(object.length);
+for(i=0;i<object.length;i++){
+	for(key in object[i]){
+		len++;
+	}
+}
+console.log(len);

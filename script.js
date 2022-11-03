@@ -1155,7 +1155,7 @@ console.log(str); */
 
 //Write a program to print Hollow Triangle Star Pattern
 
-let str="",num=5;
+/* let str="",num=5;
 for(i=0;i<=num;i++){
 	for(j=0;j<i;j++){
 		if(i==num){
@@ -1175,34 +1175,18 @@ for(i=0;i<=num;i++){
 	str+="\n"
 }
 
-console.log(str);
+console.log(str); */
 
-let object=[{
-	"name":"aaa",
-	"place":"bbb",
-	"age":"ccc",
-	"agess":"ghh"
-	},
-	{"name":"aaa",
-	"place":"bbb",
-	"age":"ccc",
-	"agess":"ghh"
-	},
-	{"name":"aaa",
-	"place":"bbb",
-	"age":"ccc",
-	"agess":"ghh"
-	},
-	{"name":"aaa",
-	"place":"bbb",
-	"age":"ccc",
+let str="",num=5;
+for(i=0;i<num;i++){
+	for(j=num;j>i;j--){
+			str+=" ";
+			console.log(str);
 	}
-],len=0;
-
-//console.log(object.length);
-for(i=0;i<object.length;i++){
-	for(key in object[i]){
-		len++;
+	for(a=0;a<i*2-1;a++){
+		str+="*";
+		console.log(str);
 	}
+	str+="\n"
 }
-console.log(len);
+console.log(str);
